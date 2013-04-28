@@ -4,6 +4,6 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('template.html');
+		$this->load->view('extend.html');
 	}
 }

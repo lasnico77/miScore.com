@@ -72,7 +72,7 @@
 	<div id="body">
 		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 		<div>
-			<a href='<?php echo site_url('examples/customers_management')?>'>Customers</a> |
+			<a href='<?php echo site_url('front/customers_management')?>'>Customers</a> |
 
 		</div>
 		<div style='height:20px;'></div>  
