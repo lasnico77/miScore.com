@@ -1,3 +1,15 @@
+﻿/* Add additional stylesheets below
+-------------------------------------------------- */
+/*
+  Bootstrap's documentation styles
+  Special styles for presenting Bootstrap's documentation and examples
+*/
+
+
+
+/* Body and structure
+-------------------------------------------------- */
+
 body {
   position: relative;
   padding-top: 40px;
@@ -9,6 +21,10 @@ h3 code {
   font-weight: normal;
 }
 
+
+
+/* Tweak navbar brand link to be super sleek
+-------------------------------------------------- */
 
 body > .navbar {
   font-size: 13px;
@@ -32,6 +48,11 @@ body > .navbar .brand:hover {
   text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.4);
 }
 
+
+/* Sections
+-------------------------------------------------- */
+
+/* padding for in-page bookmarks and fixed navbar */
 section {
   padding-top: 30px;
 }
@@ -43,10 +64,12 @@ section > ul li {
   margin-bottom: 5px;
 }
 
+/* Separators (hr) */
 .bs-docs-separator {
   margin: 40px 0 39px;
 }
 
+/* Faded out hr */
 hr.soften {
   height: 1px;
   margin: 70px 0;
@@ -57,20 +80,27 @@ hr.soften {
   border: 0;
 }
 
+
+
+/* Jumbotrons
+-------------------------------------------------- */
+
+/* Base class
+------------------------- */
 .jumbotron {
   position: relative;
   padding: 40px 0;
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
-  background: #020031; /* Old browsers */
-  background: -moz-linear-gradient(45deg,  #020031 0%, #6d3353 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#020031), color-stop(100%,#6d3353)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* IE10+ */
-  background: linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#6d3353',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: #0F0D6E; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #0F0D6E 0%, #0905DF 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#0F0D6E), color-stop(100%,#0905DF)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(45deg,  #0F0D6E 0%,#0905DF 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(45deg,  #0F0D6E 0%,#0905DF 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(45deg,  #0F0D6E 0%,#0905DF 100%); /* IE10+ */
+  background: linear-gradient(45deg,  #0F0D6E 0%,#0905DF 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0F0D6E', endColorstr='#0905DF',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
      -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
           box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
@@ -88,6 +118,7 @@ hr.soften {
   margin-bottom: 30px;
 }
 
+/* Link styles (used on .masthead-links as well) */
 .jumbotron a {
   color: #fff;
   color: rgba(255,255,255,.5);
@@ -100,6 +131,7 @@ hr.soften {
   text-shadow: 0 0 10px rgba(255,255,255,.25);
 }
 
+/* Download button */
 .masthead .btn {
   padding: 19px 24px;
   font-size: 24px;
@@ -128,6 +160,8 @@ hr.soften {
 }
 
 
+/* Pattern overlay
+------------------------- */
 .jumbotron .container {
   position: relative;
   z-index: 2;
@@ -154,6 +188,8 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 
 }
 
+/* Masthead (docs home)
+------------------------- */
 .masthead {
   padding: 70px 0 80px;
   margin-bottom: 0;
@@ -170,6 +206,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   line-height: 1.25;
 }
 
+/* Textual links in masthead */
 .masthead-links {
   margin: 0;
   list-style: none;
@@ -180,6 +217,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   color: rgba(255,255,255,.25);
 }
 
+/* Social proof buttons from GitHub & Twitter */
 .bs-docs-social {
   padding: 15px 0;
   text-align: center;
@@ -188,6 +226,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   border-bottom: 1px solid #ddd;
 }
 
+/* Quick links on Home */
 .bs-docs-social-buttons {
   margin-left: 0;
   margin-bottom: 0;
@@ -202,6 +241,8 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   *zoom: 1;
 }
 
+/* Subhead (other pages)
+------------------------- */
 .subhead {
   text-align: left;
   border-bottom: 1px solid #ddd;
@@ -215,6 +256,11 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 .subhead .navbar {
   display: none;
 }
+
+
+
+/* Marketing section of Overview
+-------------------------------------------------- */
 
 .marketing {
   text-align: center;
@@ -248,6 +294,11 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   max-height: 145px;
 }
 
+
+
+/* Footer
+-------------------------------------------------- */
+
 .footer {
   text-align: center;
   padding: 30px 0;
@@ -270,6 +321,11 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   padding-left: 0;
 }
 
+
+
+/* Special grid styles
+-------------------------------------------------- */
+
 .show-grid {
   margin-top: 10px;
   margin-bottom: 20px;
@@ -283,8 +339,8 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   min-height: 40px;
   line-height: 40px;
 }
-.show-grid [class*="span"]:hover {
-  background-color: #ddd;
+.show-grid:hover [class*="span"] {
+  background: #ddd;
 }
 .show-grid .show-grid {
   margin-top: 0;
@@ -300,6 +356,10 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   background-color: #999;
 }
 
+
+
+/* Mini layout previews
+-------------------------------------------------- */
 .mini-layout {
   border: 1px solid #ddd;
   -webkit-border-radius: 6px;
@@ -342,6 +402,11 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   margin-left: 2.5%;
 }
 
+
+
+/* Download page
+-------------------------------------------------- */
+
 .download .page-header {
   margin-top: 36px;
 }
@@ -349,6 +414,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   margin-top: 5px;
 }
 
+/* Space out h3s when following a section */
 .download h3 {
   margin-bottom: 5px;
 }
@@ -357,6 +423,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   margin-top: 9px;
 }
 
+/* Fields for variables */
 .download-builder input[type=text] {
   margin-bottom: 9px;
   font-family: Menlo, Monaco, "Courier New", monospace;
@@ -388,10 +455,12 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   color: #777;
 }
 
+/* Variables section */
 #variables label {
   margin-bottom: 0;
 }
 
+/* Giant download button */
 .download-btn {
   margin: 36px 0 108px;
 }
@@ -422,6 +491,11 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 }
 
 
+
+/* Misc
+-------------------------------------------------- */
+
+/* Make tables spaced out a bit more */
 h2 + table,
 h3 + table,
 h4 + table,
@@ -429,6 +503,7 @@ h2 + .row {
   margin-top: 5px;
 }
 
+/* Example sites showcase */
 .example-sites {
   xmargin-left: 20px;
 }
@@ -443,6 +518,8 @@ h2 + .row {
   position: relative;
 }
 
+
+/* Fake the :focus state to demo it */
 .focused {
   border-color: rgba(82,168,236,.8);
   -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,.1), 0 0 8px rgba(82,168,236,.6);
@@ -451,12 +528,15 @@ h2 + .row {
   outline: 0;
 }
 
+/* For input sizes, make them display block */
 .docs-input-sizes select,
 .docs-input-sizes input[type=text] {
   display: block;
   margin-bottom: 9px;
 }
 
+/* Icons
+------------------------- */
 .the-icons {
   margin-left: 0;
   list-style: none;
@@ -470,9 +550,8 @@ h2 + .row {
   background-color: rgba(255,0,0,.25);
 }
 
-.bootstrap-examples h4 {
-  margin: 10px 0 5px;
-}
+/* Example page
+------------------------- */
 .bootstrap-examples p {
   font-size: 13px;
   line-height: 18px;
@@ -482,6 +561,12 @@ h2 + .row {
   background-color: #fff;
 }
 
+
+
+/* Bootstrap code examples
+-------------------------------------------------- */
+
+/* Base class */
 .bs-docs-example {
   position: relative;
   margin: 15px 0;
@@ -494,6 +579,7 @@ h2 + .row {
           border-radius: 4px;
 }
 
+/* Echo out a label for the example */
 .bs-docs-example:after {
   content: "Example";
   position: absolute;
@@ -510,11 +596,14 @@ h2 + .row {
           border-radius: 4px 0 4px 0;
 }
 
+/* Remove spacing between an example and it's code */
 .bs-docs-example + .prettyprint {
   margin-top: -20px;
   padding-top: 15px;
 }
 
+/* Tweak examples
+------------------------- */
 .bs-docs-example > p:last-child {
   margin-bottom: 0;
 }
@@ -614,6 +703,12 @@ form.bs-docs-example {
 }
 
 
+
+/* Responsive docs
+-------------------------------------------------- */
+
+/* Utility classes table
+------------------------- */
 .responsive-utilities th small {
   display: block;
   font-weight: normal;
@@ -634,6 +729,8 @@ form.bs-docs-example {
   background-color: #f9f9f9 !important;
 }
 
+/* Responsive tests
+------------------------- */
 .responsive-utilities-test {
   margin-top: 5px;
   margin-left: 0;
@@ -674,6 +771,10 @@ form.bs-docs-example {
   border: 1px solid #d6e9c6;
 }
 
+
+
+/* Sidenav for Docs
+-------------------------------------------------- */
 
 .bs-docs-sidenav {
   width: 228px;
@@ -742,6 +843,13 @@ form.bs-docs-example {
 }
 
 
+
+
+/* Responsive
+-------------------------------------------------- */
+
+/* Desktop large
+------------------------- */
 @media (min-width: 1200px) {
   .bs-docs-container {
     max-width: 970px;
@@ -754,7 +862,8 @@ form.bs-docs-example {
   }
 }
 
-
+/* Desktop
+------------------------- */
 @media (max-width: 980px) {
   /* Unfloat brand */
   body > .navbar-fixed-top .brand {
@@ -764,13 +873,13 @@ form.bs-docs-example {
     padding-right: 10px;
   }
 
-
+  /* Inline-block quick links for more spacing */
   .quick-links li {
     display: inline-block;
     margin: 5px;
   }
 
-
+  /* When affixed, space properly */
   .bs-docs-sidenav {
     top: 0;
     width: 218px;
@@ -779,7 +888,8 @@ form.bs-docs-example {
   }
 }
 
-
+/* Tablet to desktop
+------------------------- */
 @media (min-width: 768px) and (max-width: 979px) {
   /* Remove any padding from the body */
   body {
@@ -799,16 +909,17 @@ form.bs-docs-example {
   }
 }
 
-
+/* Tablet
+------------------------- */
 @media (max-width: 767px) {
   /* Remove any padding from the body */
   body {
     padding-top: 0;
   }
 
-
+  /* Widen masthead and social buttons to fill body padding */
   .jumbotron {
-    padding: 40px 20px;
+    padding: 0px 0px;
     margin-top:   -20px; /* Offset bottom margin on .navbar */
     margin-right: -20px;
     margin-left:  -20px;
@@ -827,7 +938,7 @@ form.bs-docs-example {
     margin: 0 -20px;
   }
 
-
+  /* Space out the show-grid examples */
   .show-grid [class*="span"] {
     margin-bottom: 5px;
   }
@@ -843,6 +954,7 @@ form.bs-docs-example {
     top: 0;
   }
 
+  /* Unfloat the back to top link in footer */
   .footer {
     margin-left: -20px;
     margin-right: -20px;
@@ -854,19 +966,20 @@ form.bs-docs-example {
   }
 }
 
-
+/* Landscape phones
+------------------------- */
 @media (max-width: 480px) {
   /* Remove padding above jumbotron */
   body {
     padding-top: 0;
   }
 
-
+  /* Change up some type stuff */
   h2 small {
     display: block;
   }
 
-
+  /* Downsize the jumbotrons */
   .jumbotron h1 {
     font-size: 45px;
   }
@@ -879,13 +992,13 @@ form.bs-docs-example {
     margin: 0 auto;
   }
 
-
+  /* center align subhead text like the masthead */
   .subhead h1,
   .subhead p {
     text-align: center;
   }
 
-
+  /* Marketing on home */
   .marketing h1 {
     font-size: 30px;
   }
@@ -893,7 +1006,7 @@ form.bs-docs-example {
     font-size: 18px;
   }
 
-
+  /* center example sites */
   .example-sites {
     margin-left: 0;
   }
@@ -908,14 +1021,14 @@ form.bs-docs-example {
     max-width: 270px;
   }
 
-
+  /* Do our best to make tables work in narrow viewports */
   table code {
     white-space: normal;
     word-wrap: break-word;
     word-break: break-all;
   }
 
-
+  /* Examples: dropdowns */
   .bs-docs-example-submenus > .pull-left {
     float: none;
     clear: both;
@@ -934,7 +1047,7 @@ form.bs-docs-example {
     max-width: 180px;
   }
 
-
+  /* Examples: modal */
   .modal-example .modal {
     position: relative;
     top: auto;
@@ -943,7 +1056,7 @@ form.bs-docs-example {
     left: auto;
   }
 
-
+  /* Tighten up footer */
   .footer {
     padding-top: 20px;
     padding-bottom: 20px;
