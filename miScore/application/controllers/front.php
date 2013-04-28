@@ -12,36 +12,29 @@ class Front extends CI_Controller {
 		$this->load->library('grocery_CRUD');	
 	}
 	
-	function _example_output($output = null)
+	function _view_output($output = null)
 	{
-		$this->load->view('html_template.html',$output);	
-	}
-	
-	function offices()
-	{
-		$output = $this->grocery_crud->render();
-
-		$this->_example_output($output);
+		$this->load->view('homeView.html',$output);	
 	}
 	
 	function index()
 	{
-		$this->_example_output((object)array('output' => '' , 'js_files' => array() , 'css_files' => array()));
-	}	
-		
-	function employees_management()
-	{
-			$crud = new grocery_CRUD();
-
-			$crud->set_theme('datatables');
-			$crud->set_table('torneo');
-			
-			$crud->set_field_upload('file_url','assets/uploads/files');
-			
-			$output = $crud->render();
-
-			$this->_example_output($output);
+		$this->load->view('homeView.html');
 	}
 	
+/*	function index()
+	{
+		$this->_view_output((object)array('output' => '' , 'js_files' => array() , 'css_files' => array()));
+	}	
+*/			
+	function crearTorneo(){
+			
+			$this->load->view('crearTorneo.html');	
+	}
+	
+	function relacionarEquipos()
+	{
+		$this->load->view('relacionarEquipos.html');	
+	}
 	
 }
